@@ -1,4 +1,4 @@
-import { path } from "@vuepress/utils";
+// @ts-ignore
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
@@ -6,18 +6,18 @@ import sidebar from "./sidebar";
 export default hopeTheme({
   //主题选项
   //https://vuepress-theme-hope.github.io/v2/zh/config/theme/layout.html
-  hostname: "https://newzone.top",
+  hostname: "https://tiantang113.github.io",
 
   author: {
-    name: "清顺",
-    url: "https://newzone.top",
+    name: "塞北的天堂",
+    url: "https://tiantang113.github.io",
   },
 
   iconAssets: "iconfont",
   logo: "/logo.svg",
-  
+
   //是否全局启用路径导航
-  breadcrumb: false,
+  breadcrumb: true,
 
   //页面元数据：贡献者，最后修改时间，编辑链接
   contributors: false,
@@ -70,21 +70,13 @@ export default hopeTheme({
   //https://vuepress-theme-hope.github.io/v2/zh/config/theme/feature.html
   blog: {
     articleInfo: ["Date", "Category", "Tag", "ReadingTime", "PageView"],
-    name: "清顺",
+    name: "塞北的天堂",
     avatar: "/avatar_self.webp",
-    description: "迷信新工具，热衷于研究开源软件、心理学理论，定期分享探索成果",
+    description: "迷信新工具，热衷于研究开源软件",
     intro: "/intro.html",
     roundAvatar: true,
     medias: {
-      GitHub: "https://github.com/rockbenben",
-      Zhihu: "https://www.zhihu.com/people/qingwhat",
-      Weibo: "https://weibo.com/u/1992817087",
-      Wechat: "http://tc.seoipo.com/wechat.svg",
-      少数派: [
-        "https://sspai.com/u/zqj05i4v/posts",
-        path.resolve(__dirname, "icons/sspai.svg"),
-      ],
-      RSS: "https://newzone.top/rss.xml",
+      GitHub: "",
     },
   },
 

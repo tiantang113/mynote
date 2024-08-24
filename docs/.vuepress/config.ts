@@ -1,11 +1,16 @@
-import { viteBundler } from "@vuepress/bundler-vite";
+// @ts-ignore
 import { defineUserConfig } from "vuepress";
 //import { webpackBundler } from "@vuepress/bundler-webpack";
 //import { defineUserConfig } from "@vuepress/cli";
+// @ts-ignore
 import { searchPlugin } from "@vuepress/plugin-search";
+// @ts-ignore
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+// @ts-ignore
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+// @ts-ignore
 import { feedPlugin } from "vuepress-plugin-feed2";
+// @ts-ignore
 import { path } from "@vuepress/utils";
 import theme from "./theme";
 
@@ -25,7 +30,7 @@ export default defineUserConfig({
   shouldPrefetch: false,
 
   //修改页面模板，@vuepress-theme-hope/templates/index.build.html
-  templateBuild: path.resolve(__dirname, "templateBuild.html"),
+  templateBuild: path.resolve("templateBuild.html"),
 
   plugins: [
     //algolia 全文搜索：没设置爬虫的话，需删除 docsearchPlugin 区块以使用节点搜索
